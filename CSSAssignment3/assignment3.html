@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar1 {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            overflow: hidden;
+            background-color: blanchedalmond;
+        }
+        .navbar2{
+            display: none;
+        }
+
+        .img {
+            width: 300px;
+        }
+
+        .logo {
+            width: 50%;
+            padding-bottom: 10px;
+            padding-left: 60px;
+        }
+
+        ul {
+            width: 70%;
+            list-style-type: none;
+            display: flex;
+            justify-content: right;
+            gap: 150px;
+            padding-top: 25px;
+            font-size: xx-large;
+            cursor: pointer;
+        }
+
+        ul>li {
+            text-align: right;
+        }
+
+        ul>li>a:hover {
+            color: white;
+        }
+
+        .text {
+            color: black;
+            background-color: cadetblue;
+            text-align: justify;
+            margin-top: 200px;
+        }
+
+        #showbar {
+            display: none;
+        }
+        .show_nav{
+            display: block;
+        }
+
+        @media screen and (max-width: 768px) {
+            .head {
+                width: 100%;
+                height: 30px;
+            }
+            .navbar1{
+                display: none;
+            }
+
+            .navbar2 {
+                position: absolute;
+                width: 30vw;
+                height: 70vh;
+                box-shadow: 2px 0 6px 0 cadetblue;
+                background-color: blanchedalmond;
+                transition: all 400ms;
+                transform-origin: left;
+            }
+
+            .show {
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
+            ul {
+                width: 100%;
+                flex-direction: column;
+                padding-top: 10vh;
+                margin-top: 5vh;
+                border-top: 3px solid black;
+
+            }
+
+            ul>li {
+                width: 70%;
+                text-align: center;
+                font-size: xx-large;
+            }
+
+            .img {
+                width: 100px;
+            }
+
+            .logo {
+                width: fit-content;
+                padding-top: 20px;
+            }
+
+            #showbar {
+                width: 100vw;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .para {
+                text-align-last: right;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="navbar1 show">
+                <a class="img" href="https://www.google.com"><img class="logo" src="icon.png" alt="dragon" /></a>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>About</a></li>
+                </ul>
+            </div>
+            <div class="navbar2">
+                <a class="img" href="https://www.google.com"><img class="logo" src="icon.png" alt="dragon" /></a>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>About</a></li>
+                </ul>
+            </div>
+            <div id="showbar">
+                <div class="para">__________</div>
+                <div class="para">__________</div>
+                <div class="para">__________</div>
+            </div>
+        </div>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat error ea impedit cum ipsam repellat
+                sunt quidem facilis, odit iusto neque, illo et inventore eos distinctio atque officiis blanditiis at
+                ipsa libero voluptatem rem dolores fuga provident! Dolorem, quia ad aperiam aliquid quas officia
+                incidunt neque libero, omnis fugit eveniet ducimus? Dolorum voluptate et provident necessitatibus unde
+                eveniet dolore velit laboriosam. Doloribus voluptatem laboriosam fuga repellendus earum placeat, rem
+                molestiae beatae totam ullam eligendi nisi ratione cupiditate officia rerum hic eaque quisquam quis
+                maiores in ipsa, vero culpa. Illum exercitationem suscipit labore id voluptatem animi aliquid facere
+                vitae molestiae eos molestias ab doloremque, tempore ullam reiciendis possimus, sint, non iure dolore.
+                Non excepturi recusandae pariatur! Assumenda recusandae tempore aliquam deserunt exercitationem quia
+                explicabo tempora, reiciendis totam excepturi, minima laudantium eius dolores eaque molestiae aliquid
+                qui quos! Autem sint rem, quaerat perspiciatis iste adipisci nam veritatis porro at expedita similique
+                necessitatibus inventore odio officiis dolorum eveniet nesciunt fugiat unde numquam? Eaque tempora
+                deserunt consequatur maxime cumque, quae, voluptas quo numquam ratione eius omnis qui voluptatem harum
+                molestias aut dicta eveniet ipsa quia veniam sapiente repellendus. Omnis ea sint nobis corrupti
+                excepturi quas fuga ducimus eaque libero dolorem. Quia, voluptatibus officiis reiciendis facilis ipsa
+                corporis unde? Expedita ipsam doloribus fugiat assumenda, numquam itaque rem necessitatibus velit
+                possimus mollitia at omnis reprehenderit? Ipsum quisquam aperiam quaerat ducimus, ipsam quia excepturi
+                eos neque tempora vitae ullam, tempore esse, rerum odit magni cum unde magnam. Animi voluptatibus vitae
+                unde quas nam eum labore amet fugit. Aliquid dolores sunt nesciunt debitis, amet hic, ipsum similique
+                dignissimos sint perspiciatis iste. A quas, ad iusto nemo sapiente earum eum temporibus voluptatum
+                eligendi sunt atque laborum repellendus, nostrum quidem, nam esse ab nisi aspernatur. Quibusdam maiores
+                officiis, omnis veritatis exercitationem, ea porro, eos voluptas ex itaque numquam neque expedita?
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+    const hamburgerButton=document.getElementById("showbar");
+    hamburgerButton.onclick=handleClick;
+    function handleClick(e){
+        const nav=document.querySelector(".navbar2");
+        nav.classList.toggle("show_nav")
+    }
+</script>
+</body>
+</html>
+
+
+
+
